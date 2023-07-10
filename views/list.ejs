@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <title>To do list</title>
+</head>
+<body>
+    <div class="box" id="header">
+        <h1 class=""><%=daytype %></h1>
+    </div>
+    <div class="box">
+        <%for(var i=0;i<nexttask.length;i++){%>
+            <div class="item">
+                <input type="checkbox">
+                <p><%=nexttask[i] %></p>
+            </div>
+            
+        <%}%>
+        <form action="/" method="post">
+            <input type="text" placeholder="add task" name="newtask">
+            <button type="submit" >+</button>
+        </form>
+
+    </div>
+        
+    
+    
+</body>
+</html>
